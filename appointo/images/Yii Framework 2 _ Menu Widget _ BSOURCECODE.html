@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Yii Framework 2 : Menu Widget | BSOURCECODE</title>
+        <link rel="pingback" href="http://www.bsourcecode.com/xmlrpc.php">
+                        
+        
+<!-- All in One SEO Pack 2.4.4.1 by Michael Torbert of Semper Fi Web Design[186,236] -->
+<meta name="description" content="Yii 2.0 menu widget is used to display the multi-level menu items. &#39;items&#39; is the main property of Menu. It contains all the menu items with attributes.">
+
+<meta name="keywords" content="yii framework 2.0,yii 2.0 multilevel menu,yii 2.0 menu option,link property,class,id,style,yii menu,yii 2.0 menu widget">
+
+<link rel="canonical" href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/">
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="BSOURCECODE » Yii Framework 2 : Menu Widget Comments Feed" href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/feed/">
+<link rel="https://api.w.org/" href="http://www.bsourcecode.com/wp-json/">
+<link rel="prev" title="Yii Framework 2 : Create PDF Files Using mPDF" href="http://www.bsourcecode.com/yiiframework2/create-pdf-files-using-mpdf-in-yiiframework-2-0/">
+<link rel="next" title="Yii Framework 2 : Custom Pagination" href="http://www.bsourcecode.com/yiiframework2/custom-pagination-in-yiiframework-2-0/">
+        <link href="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/css(1)" rel="stylesheet">
+        <link href="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/style.css" rel="stylesheet">
+
+    <script async="" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource"></script><script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/osd.js"></script><script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(7).txt"></script><script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(8).txt" id="google_shimpl"></script><script type="text/javascript" async="" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/embed.js"></script><link rel="preload" href="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(9).txt" as="script"><script type="text/javascript" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(9).txt"></script><link rel="preload" href="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(10).txt" as="script"><script type="text/javascript" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(10).txt"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.15d8f2a22cfa6b9f96345c682b01a08f.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.0d424497492a7a96477653dedbd1462f.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.a0b0b564b806112a1c4571475f829256.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/alfalfalfa.0823c767a3bc925f628afd9bed26c958.js" async="" charset="UTF-8"></script></head>
+
+    <body>
+        <script async="" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-105328396-1', 'auto');
+  ga('send', 'pageview');
+
+</script>        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.bsourcecode.com/"><h1>BSOURCECODE</h1></a>
+            </div>
+            <ul id="catmenu_2" class="nav navbar-nav ml-auto"><li id="menu-item-1309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1309"><a href="http://www.bsourcecode.com/tips-and-tricks">Blog</a></li>
+<li id="menu-item-1480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1480"><a href="http://www.bsourcecode.com/yiiframework2/what-is-yii2">Yii 2.0</a></li>
+<li id="menu-item-220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-220"><a href="http://www.bsourcecode.com/2013/06/yii-capplication-yiiapp">Yii 1.0</a></li>
+<li id="menu-item-1831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1831"><a href="http://www.bsourcecode.com/codeigniter/what-is-codeigniter/">CodeIgniter</a></li>
+<li id="menu-item-2103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2103"><a href="https://www.facebook.com/bsourcecodes/">LIKE BY FB</a></li>
+</ul>        <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav tutorial-container" id="side-menu">
+                                <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container0" class="title">Yii2.0 Introduction</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/what-is-yii2/" id="post1581">What is Yii 2.0?</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/installing-yii2/" id="post1578">Installing Yii2.0</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/session-handling-in-yii-framework-2-0/" id="post1754">Session</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/cookies-handling-in-yii-framework2-0/" id="post1756">Cookie</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/how-to-create-custom-component-in-yii2-0-framework/" id="post1747">Create Custom Component</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container1" class="title">Yii2.0 Authentication</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/yii-2-user-login-from-database/" id="post1606">User Login</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container2" class="title">Yii2.0 URL</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/url-manager-in-yiiframework-2-0/" id="post1798">URL Manager</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/yii2-url-creation/" id="post1680">URL Creation</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/removing-index-php-from-url-in-yiiframework-2-0/" id="post1796">Removing index.php</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container3" class="title">Yii2.0 Database Model</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/yii2-0-database-connection/" id="post1669">Database Connection</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/select-query-sql-queries/" id="post1426">Select Query (SQL)</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/select-query-model/" id="post1423">Select Query (Model)</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/select-query-advanced/" id="post1428">Advanced Select Query</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/select-query-joins/" id="post1427">Joins Query</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/insert-query/" id="post1434">Insert Query</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/update-query/" id="post1432">Update Query</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/yii-framework-2-upsert-query/" id="post2106">Upsert Query</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/delete-query/" id="post1433">Delete Query</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/transaction/" id="post1435">Transaction</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/yii2-0-scenarios/" id="post1742">Scenarios</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/sqldataprovider-in-yii-framework-2-0/" id="post1815">SqlDataProvider</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/validation-rules-for-model-attributes-in-yiiframework-2-0/" id="post1797">Validation Rules</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container4" class="title">Yii2.0 Form And Html Fields</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/yii2-0-activeform-input-fields/" id="post1750">ActiveForm Input Fields</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/yii2-0-display-dropdownlist/" id="post1752">DropDownList</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container5" class="title">Yii2.0 Widget</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/how-to-create-custom-widget-in-yii2-0-framework/" id="post1745">Create Custom Widget</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/gridview-in-yiiframework-2-0/" id="post1803">Gridview</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/" id="post1822">Menu Widget</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/custom-pagination-in-yiiframework-2-0/" id="post1824">Custom Pagination</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container6" class="title">Yii2.0 Extensions</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/create-pdf-files-using-mpdf-in-yiiframework-2-0/" id="post1817">Create PDF Using mPDF</a></li>
+                                                                <li><a href="http://www.bsourcecode.com/yiiframework2/gridview-to-excel-export-extension-in-yiiframework-2-0/" id="post1826">GridView To Excel Export</a></li>
+                                                        </ul>
+                    </li>
+                                        <li class="item-list">
+                        <a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#tutorial-container7" class="title">Yii2.0 Theme</a>
+
+                        <ul class="nav nav-second-level">
+
+                                                            <li><a href="http://www.bsourcecode.com/yiiframework2/install-new-theme-in-yiiframework-2/" id="post1800">Install New Theme</a></li>
+                                                        </ul>
+                    </li>
+                            </ul>
+    </div>
+</div>
+
+        </nav>
+        <div id="page-wrapper" style="min-height: 537px;">
+            <div class="container-fluid main-container single-post">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="content-div">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="google_ads">
+                                        <!-- google menu ads -->
+<div style="text-align: left;">
+<script async="" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(11).txt"></script>
+<!-- yiibook_header-menu_AdSense3_728x90_as -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7302935549134036" data-ad-slot="9980236314" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(3).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- google ads -->                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-8">
+                                    <header class="entry-header">
+                                        <h1 class="entry-title">Yii Framework 2 : Menu Widget</h1>
+                                    </header>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="google_ads">
+                                                <!-- google menu ads -->
+<div style="text-align: left;">
+<script async="" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(11).txt"></script>
+<ins class="adsbygoogle" style="display: block; height: 161px;" data-ad-format="fluid" data-ad-layout-key="-gd-2f+2a-1p+ak" data-ad-client="ca-pub-7302935549134036" data-ad-slot="3804487373" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:161px;margin:0;padding:0;position:relative;visibility:visible;width:583px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:161px;margin:0;padding:0;position:relative;visibility:visible;width:583px;background-color:transparent;"><iframe width="583" height="161" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:583px;height:161px;" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(4).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- google ads -->                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post_content entry-content">
+                                        <p></p><p>Yiiframewokr 2.0 'yii\widgets\Menu' widgets is used to display the multi-level menu items using nested HTML lists. 'items' is the main property of Menu. It contains all the menu items with attributes. A menu can contain the sub-menu and their properties like class, style etc. So default Yii 2.0 menu widget is giving a flexible way to render a menu and it has the following methods.</p>
+<div class="pcl">
+<ol>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Menu-Item-Active-Class">Menu Item Active Class</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#First-Last-Menu-Item-Class">First &amp; Last Menu Item Class</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Menu-Item-Label-Wrappers-Template">Menu Item Label Template</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Menu-id-class-style">Menu ID, Class, Style Etc.</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Submenu-Template">Sub menu Template</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Menu-Links-Options">Menu Links Options.</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Menu-Item-Options">Menu Item Options</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Activate-Parents-Menu-Items">Activate Parents Menu Items</a></li>
+	<li><a href="http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/#Add-HTML-In-Menu-Items">Add HTML In Menu Items</a></li>
+</ol>
+</div>
+<h3 id="Menu-Item-Active-Class">Menu Item Active Class</h3>
+<p>We can set the active class name of Menu list. The default active class in yii2 is 'active'. Using "activeCssClass" property, we can set it or override the default.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+    ],
+    <span class="hljs-string">'activeCssClass'</span>=&gt;<span class="hljs-string">'activeclass'</span>,
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site/index"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"activeclass"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site/about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="First-Last-Menu-Item-Class">First &amp; Last Menu Item Class</h3>
+<p>firstItemCssClass is used to set the class for first item of menu or each sub-menu and by default it is null.<br>
+ lastItemCssClass is used to set the class for last item of menu or each sub-menu and by default it is null.<br>
+ When first or last menu item is acitve, 'activeCssClass' value will be added with this.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+    <span class="hljs-comment">// not just as 'controller' even if default action is used.</span>
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Contact'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/contact'</span>]],
+    ],
+    <span class="hljs-string">'firstItemCssClass'</span>=&gt;<span class="hljs-string">'fistitemclass'</span>,
+    <span class="hljs-string">'lastItemCssClass'</span> =&gt;<span class="hljs-string">'lastitemclass'</span>,
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fistitemclass"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lastitemclass"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fcontact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Menu-Item-Label-Template">Menu Item Label Template</h3>
+<p>Add tag for link item label in Menu widget yii2. For example We added the<br>
+ tag around the link label like. <a>Link</a>.<br>
+ Note: 'labelTemplate' format will work If menu item url is empty</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+    ],
+    <span class="hljs-string">'labelTemplate'</span> =&gt;<span class="hljs-string">'{label} Label'</span>,
+    <span class="hljs-string">'linkTemplate'</span> =&gt; <span class="hljs-string">'&lt;a href="{url}"&gt;&lt;span&gt;{label}&lt;/span&gt;&lt;/a&gt;'</span>,
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Menu-id-class-style">Menu ID, Class, Style Etc.&nbsp;</h3>
+<p>Menu widget 'options' array is use to render the HTML attributes for the menu's container tag like class, id, style and more tags in yii2. By default it is empty array;</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Contact'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/contact'</span>]],
+    ],
+    <span class="hljs-string">'options'</span> =&gt; [
+        <span class="hljs-string">'class'</span> =&gt; <span class="hljs-string">'navbar-nav nav'</span>,
+        <span class="hljs-string">'id'</span>=&gt;<span class="hljs-string">'navbar-id'</span>,
+        <span class="hljs-string">'style'</span>=&gt;<span class="hljs-string">'font-size: 14px;'</span>,
+        <span class="hljs-string">'data-tag'</span>=&gt;<span class="hljs-string">'yii2-menu'</span>,
+    ],
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">data-tag</span>=<span class="hljs-string">"yii2-menu"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:block; font-size: 14px;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav nav"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar-id"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fcontact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Submenu-Template">Sub menu Template</h3>
+<p>'submenuTemplate' and 'template' is a wonderful option in menu widget of yiiframework 2.0.</p>
+<p>'submenuTemplate' string is used to replace the default submenu '{items}' format by given format string. By default 'submenu' tag is 'ul'. If you want you can change it or add class, id, style etc.<br>
+ Default 'submenuTemplate' is</p>
+<pre><code class="hljs php"><span class="hljs-keyword">public</span> $submenuTemplate = <span class="hljs-string">"\n&lt;ul&gt;\n{items}\n&lt;/ul&gt;\n"</span>;</code></pre>
+<p>'template' options is used to customize the items value. By default items having a tag. We can change it using this.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+        [
+            <span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Products'</span>,
+            <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'product/index'</span>],
+            <span class="hljs-string">'options'</span>=&gt;[<span class="hljs-string">'class'</span>=&gt;<span class="hljs-string">'dropdown'</span>],
+            <span class="hljs-string">'template'</span> =&gt; <span class="hljs-string">'&lt;a href="{url}" class="href_class"&gt;{label}&lt;/a&gt;'</span>,
+            <span class="hljs-string">'items'</span> =&gt; [
+                [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'New Arrivals'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'product/new'</span>]],
+                [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Most Popular'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'product/popular'</span>]],
+            ]
+        ],
+    ],
+    <span class="hljs-string">'submenuTemplate'</span> =&gt; <span class="hljs-string">"\n&lt;ul class='dropdown-menu' role='menu'&gt;\n{items}\n&lt;/ul&gt;\n"</span>,
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"href_class"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=product%2Findex"</span>&gt;</span>Products<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=product%2Fnew"</span>&gt;</span>New Arrivals<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=product%2Fpopular"</span>&gt;</span>Most Popular<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Menu-Links-Options">Menu Links Options</h3>
+<p>'linkTemplate' string is used to customize all the link of menu items. The default value is</p>
+<pre><code class="hljs php"><span class="hljs-keyword">public</span> $linkTemplate = <span class="hljs-string">'&lt;a href="{url}"&gt;{label}&lt;/a&gt;'</span>;</code></pre>
+<p>Just change the format How do you want?.{url} value will be replaced the corresponding item URL and {label} will be replace link text. You can add class, id, style and more data attribute of item menu links.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+    ],
+    <span class="hljs-string">'linkTemplate'</span> =&gt; <span class="hljs-string">'&lt;a href="{url}" class="href_class" id="href_id" style=""&gt;{label}&lt;/a&gt;'</span>,
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">style</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"href_id"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"href_class"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site/index"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">style</span>=<span class="hljs-string">""</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"href_id"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"href_class"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site/about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Menu-Item-Options">Menu Item Options</h3>
+<p>'itemOptions' property is used to set the HTML attribute to all the menu items of menu, sub menu. It will merge the html attribute if anything assigned before.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+        [
+            <span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Products'</span>,
+            <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'product/index'</span>],
+            <span class="hljs-string">'items'</span> =&gt; [
+                [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'New Arrivals'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'product/index'</span>]],
+            ],
+        ],
+    ],
+    <span class="hljs-string">'itemOptions'</span>=&gt;<span class="hljs-keyword">array</span>(<span class="hljs-string">'id'</span>=&gt;<span class="hljs-string">'item_id'</span>, <span class="hljs-string">'class'</span>=&gt;<span class="hljs-string">'item_class'</span>, <span class="hljs-string">'style'</span>=&gt;<span class="hljs-string">''</span>),
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">style</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item_class"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"item_id"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">style</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item_class active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"item_id"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">style</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item_class"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"item_id"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=product%2Findex"</span>&gt;</span>Products<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">style</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item_class"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"item_id"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=product%2Findex"</span>&gt;</span>New Arrivals<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Activate-Parents-Menu-Items">Activate Parents Menu Items</h3>
+<p>Whether to activate parent menu items When one of the corresponding child menu items is active. The active class will append the existing class value if available for parent.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+        [
+            <span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Contact'</span>,
+            <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/contact'</span>],
+            <span class="hljs-string">'items'</span> =&gt; [
+                [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Contact Us'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/contact'</span>]],
+            ]
+        ],
+    ],
+    <span class="hljs-string">'activateParents'</span>=&gt;<span class="hljs-keyword">true</span>,
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fcontact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fcontact"</span>&gt;</span>Contact Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<h3 id="Add-HTML-In-Menu-Items">Add HTML In Menu Items</h3>
+<p>By default 'encodeLabels' is true. So your item label will be encode using Html::encode($label). If you don't want to encode the html just set the false to 'encodeLabels' attribute in yii 2.0 menu widgets.</p>
+<pre><code class="hljs xml">
+<span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> Menu::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home&lt;span class="caret"&gt;&lt;/span&gt;'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>]],
+        [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'About'</span>, <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/about'</span>]],
+    ],
+    <span class="hljs-string">'encodeLabels'</span> =&gt; <span class="hljs-keyword">false</span>,
+    <span class="hljs-string">'options'</span> =&gt; <span class="hljs-keyword">array</span>( <span class="hljs-string">'class'</span> =&gt; <span class="hljs-string">'navbar-nav nav'</span>, <span class="hljs-string">'id'</span>=&gt;<span class="hljs-string">'navbar-id'</span> )
+]);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5>HTML OUTPUT</h5>
+<pre><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav nav"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar-id"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Findex"</span>&gt;</span>Home<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/yii2site/web/index.php?r=site%2Fabout"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre><p></p>
+                                        <div>
+                                                                                            <br><p class="entry-meta">
+                                                    <span>Tags:</span>
+                                                    <a href="http://www.bsourcecode.com/tag/yii-menu/" title="Yii Menu Tag" class="yii-menu">Yii Menu</a>, <a href="http://www.bsourcecode.com/tag/yii-2-0-menu-widget/" title="Yii 2.0 Menu Widget Tag" class="yii-2-0-menu-widget">Yii 2.0 Menu Widget</a>                                                </p>
+                                                                                    </div>
+                                        <div class="clear"></div>
+                                        
+<div id="disqus_thread"><iframe id="dsq-app5020" name="dsq-app5020" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(5).html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 1278px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+
+<script type="text/javascript">
+var disqus_url = 'http://www.bsourcecode.com/yiiframework2/menu-widget-in-yii-framework-2-0/';
+var disqus_identifier = '1822 http://www.bsourcecode.com/?post_type=yiiframework2&#038;p=1822';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'bsourcecode';
+var disqus_title = "Yii Framework 2 : Menu Widget";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=1822';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-block d-xl-block">
+                                    <div class="google_ads">
+                                        <!-- google menu ads -->
+<div style="text-align: center;">
+<script async="" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/f(11).txt"></script>
+<!-- 300*600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-7302935549134036" data-ad-slot="4945953317" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:300px;height:600px;" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(6).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- google ads -->                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content" itemprop="text"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer" style="display:none;">
+    <div class="container copywrite">
+        <div class="row" style="height:100px;">
+            <span>Copyright © 2020 All rights reserved<br>
+                <a class="vglnk" href="http://www.bsourcecode.com/" rel="nofollow"><span>www</span><span>.</span><span>bsourcecode</span><span>.</span><span>com</span></a></span>
+        </div>
+    </div>
+</div>
+
+<script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/jquery.min.js"></script>
+<script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/bootstrap.min.js" async=""></script>
+<script src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    $(function () {
+        $(window).bind("load resize", function () {
+            var topOffset = 50;
+            var width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+            if (width < 768) {
+                $('div.navbar-collapse').addClass('collapse');
+                topOffset = 100; // 2-row-menu
+            } else {
+                $('div.navbar-collapse').removeClass('collapse');
+            }
+
+            var height = ((this.window.innerHeight > 0) ? this.window.innerHeight : this.screen.height) - 1;
+            height = height - topOffset;
+            if (height < 1)
+                height = 1;
+            if (height > topOffset) {
+                $("#page-wrapper").css("min-height", (height) + "px");
+            }
+        });
+    });
+
+    var active_id = '1822';
+    $(document).ready(function () {
+        function navbardisplay(nav) {
+            document.getElementById("navbarCollapse").classList.toggle('collapse');
+        }
+
+        $('.collapse').on('show.bs.collapse', function (e) {
+            $('.collapse').collapse("hide")
+        });
+        $('div.active').closest(".item-list").addClass('show');
+        if (active_id) {
+            $("#post" + active_id).focus();
+        }
+    });
+</script>
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(7).html"></iframe></ins></ins></ins><iframe style="display: none;" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(8).html"></iframe><iframe id="google_osd_static_frame_948656874111" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/saved_resource(9).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./Yii Framework 2 _ Menu Widget _ BSOURCECODE_files/zrt_lookup.html" data-ad-client="ca-pub-7302935549134036" style="display: none;"></iframe></html>

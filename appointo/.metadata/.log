@@ -1,0 +1,158 @@
+!SESSION 2020-01-23 14:12:52.862 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2020-01-23 14:13:13.366
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2020-01-23 14:13:16.812
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 14:13:17.709
+!MESSAGE Initializing CodeMix Engine's settings file at /var/www/html/appointo/.metadata/codemix.code-workspace
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 14:13:17.729
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 14:13:17.737
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/ics/.eclipse/360744294_linux_gtk_x86_64/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 14:13:17.740
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 14:13:17.838
+!MESSAGE CodeMix Engine engine has been started
+!SESSION 2020-01-23 15:17:11.442 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2020-01-23 15:17:21.233
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2020-01-23 15:17:26.671
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 15:17:29.303
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 15:17:29.313
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/ics/.eclipse/360744294_linux_gtk_x86_64/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 15:17:29.317
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-23 15:17:29.413
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY org.eclipse.ui 4 4 2020-01-23 15:21:07.625
+!MESSAGE Plug-in 'org.eclipse.egit.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): org.eclipse.egit.ui.actions.OpenCommitSearchPage
+
+!ENTRY org.eclipse.ui 4 4 2020-01-23 15:21:07.655
+!MESSAGE Plug-in 'com.genuitec.eclipse.code' contributed an invalid Menu Extension (Path: 'help/com.eclipse.genuitec.codemixgroup' is invalid): com.genuitec.codemix.upgradelicenseaction
+
+!ENTRY org.eclipse.ui 4 4 2020-01-23 15:21:07.655
+!MESSAGE Plug-in 'com.genuitec.eclipse.code' contributed an invalid Menu Extension (Path: 'help/com.eclipse.genuitec.codemixgroup' is invalid): com.genuitec.codemix.openforumaction
+
+!ENTRY org.eclipse.ui 4 4 2020-01-23 15:21:07.661
+!MESSAGE Plug-in 'org.eclipse.dltk.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.dltk.ui.refactoring.menu' is invalid): org.eclipse.dltk.ui.actions.Move
+
+!ENTRY org.eclipse.ui 4 4 2020-01-23 15:21:07.661
+!MESSAGE Plug-in 'org.eclipse.dltk.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.dltk.ui.refactoring.menu' is invalid): org.eclipse.dltk.ui.actions.Rename
+
+!ENTRY com.genuitec.eclipse.code.angular 4 0 2020-01-23 15:23:49.506
+!MESSAGE Unexpected end of input at 1:-1
+!STACK 0
+com.eclipsesource.json.ParseException: Unexpected end of input at 1:-1
+	at com.eclipsesource.json.JsonParser.error(JsonParser.java:379)
+	at com.eclipsesource.json.JsonParser.expected(JsonParser.java:370)
+	at com.eclipsesource.json.JsonParser.readValue(JsonParser.java:108)
+	at com.eclipsesource.json.JsonParser.parse(JsonParser.java:73)
+	at com.eclipsesource.json.JsonValue.readFrom(JsonValue.java:110)
+	at com.eclipsesource.json.JsonArray.readFrom(JsonArray.java:116)
+	at com.genuitec.eclipse.code.angular.cli.NGCLIIntegrationService.loadLocations(NGCLIIntegrationService.java:117)
+	at com.genuitec.eclipse.code.angular.cli.NGCLIIntegrationService.prepareForCLIIntegration(NGCLIIntegrationService.java:39)
+	at com.genuitec.eclipse.code.angular.AngularCorePlugin$1.run(AngularCorePlugin.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-01-28 09:45:38.686 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2020-01-28 09:46:00.638
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2020-01-28 09:46:05.385
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-28 09:46:07.431
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-28 09:46:07.440
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/ics/.eclipse/360744294_linux_gtk_x86_64/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-28 09:46:07.471
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-28 09:46:07.633
+!MESSAGE CodeMix Engine engine has been started
+!SESSION 2020-01-29 16:07:07.836 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2020-01-29 16:07:17.680
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2020-01-29 16:07:21.963
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:07:22.584
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:07:22.590
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/ics/.eclipse/360744294_linux_gtk_x86_64/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:07:22.593
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:07:22.708
+!MESSAGE CodeMix Engine engine has been started
+!SESSION 2020-01-29 16:13:34.125 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2020-01-29 16:13:44.180
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2020-01-29 16:13:49.522
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:13:50.246
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:13:50.255
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/ics/.eclipse/360744294_linux_gtk_x86_64/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:13:50.258
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2020-01-29 16:13:50.346
+!MESSAGE CodeMix Engine engine has been started
