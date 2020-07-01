@@ -1,0 +1,11 @@
+STRING:- A string is a sequence of letters, numbers, special characters and arithmetic values or combination of all.
+The simplest way to create a string is to enclose the string literal (string characters) in single quotation marks ('),
+                      like this: $my_string = 'Hello World';
+
+EXAMPLE OF STRING:-
+      
+        		   <?php
+		  $string1="Hello World";
+		  $string2="1234";
+ 		  echo $string1 . " " . $string2;
+		  ?>...            
